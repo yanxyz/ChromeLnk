@@ -8,5 +8,6 @@ fi
 
 zip -jq $name\
   src/WindowsFormsApplication1/bin/release/ChromeLnk.exe\
+  src/WindowsFormsApplication1/bin/release/RunProcessAsTask.dll\
   README.md\
   MIT-License
