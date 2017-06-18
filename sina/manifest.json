@@ -1,0 +1,30 @@
+{
+  "name": "Chrome Update",
+  "description": "从新浪下载站检查更新 Chrome",
+  "version": "1.0",
+  "manifest_version": 2,
+  "minimum_chrome_version": "44",
+  "author": "Ivan Yan",
+  "background": {
+    "scripts": ["check.js", "background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": {
+      "38": "icon-38.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "permissions": [
+    "http://down.tech.sina.com.cn/",
+    "storage",
+    "notifications"
+  ]
+}
